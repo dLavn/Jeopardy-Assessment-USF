@@ -1,0 +1,91 @@
+/* some colors you may find useful:
+  #115ff4
+  #060ce9
+  #28a200
+  #8d2ab5
+  #74119c
+*/
+
+/* Body styles */
+body {
+  font-family: 'Copse', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+/* Header styles */
+header {
+  background-color: #115ff4; /* Blue */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+/* Start button styles */
+#start {
+  background-color: #28a200; /* Green */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#start:hover {
+  background-color: #148900; /* Darker green */
+}
+
+/* Game board styles */
+#jeopardy {
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+#jeopardy th, #jeopardy td {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+  min-width: 100px;
+}
+
+#jeopardy th {
+  background-color: #74119c; /* Purple */
+  color: white;
+}
+
+#jeopardy tbody td {
+  cursor: pointer;
+}
+
+.clicked {
+  background-color: lightyellow;
+}
+
+.answer{
+  background-color: lightgreen;
+}
+
+/* Spinner styles */
+#spin-container {
+  text-align: center;
+  margin-top: 20px;
+  display: none;
+}
+
+.fa-spinner {
+  font-size: 2em;
+  color: #74119c; /* Purple */
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
